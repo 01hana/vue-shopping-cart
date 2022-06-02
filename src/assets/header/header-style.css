@@ -1,0 +1,251 @@
+#app{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+#hamburger{
+    display: none;
+    width: 30vw;
+    padding-left: 3vw;
+}
+
+#hamburger-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+header{
+    height: 85px;
+    background-color: white;
+    box-shadow:  0px 0px 5px #e7e6e6 ;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+header .container-fluid{
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+nav ul{
+    width: 32vw;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-left: 1vw;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    width: 34vw;
+    color:  #d8c5a6;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand h1{
+    color:#d8c5a6;
+}
+
+#navbar-rest{
+    width: 32vw;
+    padding-right: 1vw;
+}
+
+#navbar-rest ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#navbar-rest ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+#navbar-rest input{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+.cart-qty{
+    font-size: 13px;
+    width: 18px;
+    height: 18px;
+    background-color:#d8c5a6;
+    border-radius: 50%;
+    position: relative;
+    right: 15px;
+}
+
+#sidenav .div1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 32px;
+}
+
+#sidenav-input{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+#sidenav-input, #input:focus{
+    outline: none;
+}
+
+#sidenav-search-btn{
+    margin: 0 6px;
+}
+
+#search-btn, #sidenav-search-btn{
+    cursor: pointer;
+}
+
+.navbar-icon{
+    width: 23px;
+    height: 23px;
+}
+
+#sidenav{
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d8c5a6;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+#sidenav ul{
+    height: 90%;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+#sidenav ul li{
+    list-style: none;
+    font-family: "TTNorms-Regular", Helvetica, "微軟正黑體", sans-serif;
+}
+
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+#sidenav a:hover{
+    color: #ffffff;
+}
+
+#sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidenav-list{
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+#sidenav .div2{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+}
+
+#sidenav .div2 a{
+    padding: 0 8px;
+}
+
+.sidenav-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.search-enter-active,
+.search-leave-active{
+    transition: opacity .5s ease-in;
+}
+
+.search-enter-from,
+.search-leave-to{
+    opacity : 0
+}
+
+.search-enter-to,
+.search-leave-from{
+    opacity : 1
+}
+
+.sidenav-enter-from,
+.sidenav-leave-to{
+    transform: translateX(-100%);
+}
+
+.sidenav-enter-to,
+.sidenav-leave-from{
+    transform: translateX(0%);
+}
+
+.sidenav-enter-active,
+.sidenav-leave-active{
+    transition: 0.5s ease;
+}
+
+@media only screen and (min-width:992px){
+    #sidenav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:992px){
+    #hamburger{
+        display: block;
+    }
+    #search-btn, #input{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .navbar-icon, .cart-qty{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:576px){
+    #sidenav{
+        width: 100%;
+    }
+    #sidenav-input{
+        width: 80vw;
+    }
+}
