@@ -1,1 +1,0 @@
-import{I as n,r as s,z as a}from"./index-ZilEDsgf.js";const l=n("cart",()=>{const e=s([]),u=a(()=>e.value.reduce((r,t)=>r+=t.quantity,0)),c=a(()=>e.value.reduce((r,t)=>r+=t.price*t.quantity,0));function o(r){e.value=e.value.filter(t=>t.id!==r)}return{cartItems:e,cartCount:u,cartTotal:c,removeItem:o}});export{l as u};
